@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --cor-primaria: #89c5cc;
+  --cor-secundaria: #7d7987;
+  --cor-terciaria: #000000;
+  --cor-quartenaria: #89c5cc;
+  --cor-quinaria: #ffffff;
+  --cor-botao: #69b99d;
+  --cor-texto-header: #1F1534;
+
+  --fonte-principal: "Mulish";
+  --fonte-secundaria: "Inter";
+  --fonte-terciaria: "Open Sans";
+}
+
+html{
+    overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cor-quinaria);
+}
+
+.cabecalho {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 30px 0; 
+}
+
+.cabecalho__menu__link {
+    display: flex;
+    gap: 15px; 
+    padding: 0 380px 0 0;
+}
+
+.links{ 
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-texto-header);
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+.cabecalho__menu__link__logo {
+    text-decoration: none;
+    font-weight: 800;
+    color: #69b99d;
+    font-family: var(--fonte-secundaria);
+    padding: 30px 183px; 
+}
+
+
+.cabecalho__menu__link {
+    margin-left: auto; 
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 8% 0 0 10%;
+  width: ;
+}
+
+.container__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  width: 50%;
+  height: 482px;
+  display: flex;
+  padding: 0 180px ;
+}
+
+.container__titulo {
+  font-family: var(--fonte-principal);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.destaque__titulo {
+  color: var(--cor-quartenaria);
+}
+
+.container__texto {
+  font-family: var(--fonte-terciaria);
+  color: var(--cor-secundaria);
+  font-size: 300;
+}
+.botao__contato {
+  background-color: var(--cor-botao);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 38%;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--cor-quinaria);
+  font-size: 1.5rem;
+  font-family: var(--fonte-terciaria);
+  font-weight: 400;
+  padding: 15px;
+  align-self: flex-start;
+}
+
+.botao__contato:hover {
+  background-color: #4a9a7e;
+}
+
+.container__image {
+    padding-right: 50%;
+  display: block;
+  max-width: 100%;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  margin-top: -20%;
+}
+
+.rodape{
+    padding-top: 100px;
+    padding-bottom: 5px;
+}
+
+.rodape__texto{
+    font-family: var(--fonte-terciaria);
+    font-size: 1.14rem;
+    font-weight: 300;
+    text-align: center;
+}
